@@ -419,7 +419,7 @@ const ur = async (insertion_element, square_size, square_unit="px", nr_tokens=7)
 
         if (!(FINAL.includes(enemy_token_position)) && !(HOME.includes(enemy_token_position)) && !(kick_out === -1) && tokens[moving_token] < WIN) {
             if(REROLL.includes(enemy_token_position)) {
-                return move(1, tokens, tokens, enemy_tokens, moving_token);
+                return move(1, tokens, enemy_tokens, moving_token);
             }
             enemy_tokens[kick_out] = -1;
         }

@@ -17,7 +17,10 @@ To play this game or introduce it into your website simply add the html:
 ```
 
 #### For the cool kids
-npm repo & instructions coming soon TM
+'''bash
+npm i ur.js
+# The javascript file will reside at: node_modules/ur.js/ur.js
+'''
 
 
 ## What is the royal game of Ur ?

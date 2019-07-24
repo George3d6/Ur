@@ -457,6 +457,16 @@ const ur = async (insertion_element, square_size, square_unit="px", nr_tokens=7)
                     await sleep(1200);
                     return turn(other_tokens, current_tokens);
                 }
+
+                if (moves + current_tokens.positions[moving_token] > 14) {
+                    show_error('You must roll the exact move to exit the board.<br>No more, no less.');
+                    continue;
+                }
+
+                if (current_tokens.positions[moving_token] >= WIN) {
+                    show_error('Leave that soldier behind, he\'s already home.');
+                    continue;
+                }
                 const current_square = move(moves, current_tokens.positions, other_tokens.positions, moving_token);
 
                 if(isNaN(current_square)) {

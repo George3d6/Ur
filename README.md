@@ -8,15 +8,18 @@ Try out the game at: https://ur.cerebralab.com
 ## Using the plugin
 
 #### Normal install
+
 To play this game or introduce it into your website simply add the html:
 ```html
-    <script type="text/javascript" src="https://ur.cerebralab.com/ur.js"></script>
+    <script type="text/javascript" src="https://cdn.cerebralab.com/misc/ur.js"></script>
     <script type="text/javascript">
         ur(document.getElementsByTagName('body')[0], '80', 'px', 7);
     </script>
 ```
 
 #### For the cool kids
+
+(Probably not up to date
 
 ```bash
 npm i ur.js
